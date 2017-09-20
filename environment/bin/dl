@@ -1,0 +1,29 @@
+
+#! /bin/bash
+echo 'Succeed in began '
+
+if [ -f $1 ] ; then
+{
+echo "file '$1' do exist"
+mv $1 /trash
+     if [ -f $1 ] ; then
+    	echo "fail in removing '$1' "
+     else
+	echo "succeed in removing the file '$1'"
+     fi 
+}
+else 
+echo "file  missing"
+fi
+
+
+
+
+
+
+
+
+
+
+echo "progrem running successfully"
+
