@@ -1,0 +1,31 @@
+I want a shell to record my aty
+It should be able to record my activity,together with time，state，and descripion(If I want).
+It should be as concise as possible,
+which means I don't need to type in extra things.
+I hope the log is written in the form of:
+	log_id:0000001
+	aty_id:00001
+	[2017-7-16][8:49]
+	description:begin
+
+
+I have a file called "mission",which is lead out from "goal" and "daily"
+And there is also a file called activity,it is used to record the activity that I may do.
+Activity is record in the following format 
+kind	id	name	characteristic	description_adress
+1	0001	sleep	0001.1		none
+1	0002	get_up			none
+
+
+kind:
+1----daily activity
+2----mission activity
+3----emergency 
+4----work
+
+characteristic:
+it is writen in a rule,
+start at 0000 ,means I dont want to record the characteristic.
+start at 0001,means it follows the first edition of the rule.
+then,
+

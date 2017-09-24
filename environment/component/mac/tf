@@ -1,0 +1,30 @@
+
+#! /bin/bash
+echo 'Succeed in began '
+
+if [ -f $1 ] ; then
+{
+echo "file '$1' do exist"
+mv $1 /Users/yuyang/life-manage/environment/component
+     if [ -f /Users/yuyang/life-manage/environment/component$1 ] ; then
+    	echo "Succeed in saving '$1' "
+     else
+	echo "Fail in saving the file '$1'"
+     fi 
+}
+else 
+echo "file $1  missing"
+fi
+
+cd /Users/yuyang/life-manage/
+git commit -a -m none
+
+
+
+
+
+
+
+
+echo "progrem running successfully"
+
