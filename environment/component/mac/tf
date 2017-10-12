@@ -17,7 +17,8 @@ echo "file $1  missing"
 fi
 
 cd /Users/yuyang/life-manage/
-git commit -a -m none
+git add /Users/yuyang/life-manage/environment/component$1
+git commit -a
 
 
 
